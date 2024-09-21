@@ -1,0 +1,9 @@
+path: C:\Users\lrq\Desktop\learn\YOLO_Format
+train: images/train
+val: images/val
+test: images/test
+
+#classes
+names:
+  0: front
+  1: back
