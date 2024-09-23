@@ -20,7 +20,6 @@ def rename_images_in_folder(folder_path):
         os.rename(old_file, new_file)
         print(f"Renamed: {old_file} -> {new_file}")
 
-
 if __name__ == "__main__":
-    folder_path = "C:/Users/lrq/Desktop/learn/VOC/JPEGImages"
+    folder_path = "E:\BaiduSyncdisk\DLPWeld\dataset_angleSteel\yolo-utils\VOC\JPEGImages"
     rename_images_in_folder(folder_path)
