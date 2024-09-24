@@ -76,3 +76,5 @@ python ./scripts/makedirs.py
 
 
 10.调用脚本`scripts\train.py`即可开始训练YOLOv8模型
+
+11.调用脚本`scripts\export.py`导出onnx格式的模型
