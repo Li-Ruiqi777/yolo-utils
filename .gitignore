@@ -167,3 +167,5 @@ cython_debug/
 /YOLOv8-TensorRT
 
 *.pt
+*.onnx
+*.engine

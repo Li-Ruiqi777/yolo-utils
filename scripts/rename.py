@@ -8,8 +8,11 @@ def rename_images_in_folder(folder_path):
     image_extensions = [".jpg", ".jpeg", ".png", ".bmp", ".gif", ".tiff", ".txt", ".xml"]
     images = [f for f in files if os.path.splitext(f)[1].lower() in image_extensions]
 
-    # 对图片进行排序并从00001开始重命名
-    for idx, image in enumerate(sorted(images), start=157):
+    # 命名起始序号
+    start=1
+
+    # 对图片进行排序并从start开始重命名
+    for idx, image in enumerate(sorted(images), start):
         new_name = f"{idx:06d}{os.path.splitext(image)[1].lower()}"
 
         # 原文件路径和新文件路径
