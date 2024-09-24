@@ -11,7 +11,7 @@ imgpath = 'VOC/JPEGImages'
 xmlpath = 'VOC/Annotations'
 txtpath = 'VOC/txt'
 
-classes = ['BackType1', 'FrontType1', 'FrontType3', 'BackType2', 'FrontType2']
+classes = ['broken', 'warp', 'scatter', 'rust', 'wear']
 
 def convert(size, box):
     dw = 1. / (size[0])

@@ -24,5 +24,5 @@ def rename_images_in_folder(folder_path):
         print(f"Renamed: {old_file} -> {new_file}")
 
 if __name__ == "__main__":
-    folder_path = "E:/BaiduSyncdisk/yolo-utils/VOC/Annotations"
+    folder_path = "E:\DeepLearning\yolo-utils\VOC\JPEGImages"
     rename_images_in_folder(folder_path)

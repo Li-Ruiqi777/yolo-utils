@@ -1,0 +1,5 @@
+1 broken 244 108 59 
+2 warp 85 170 0 
+3 scatter 249 193 0 
+4 rust 255 0 127 
+5 wear 0 170 255 
