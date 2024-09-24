@@ -1,4 +1,4 @@
-path: E:\BaiduSyncdisk\DLPWeld\dataset_angleSteel\yolo-utils\YOLO_Format
+path: E:/BaiduSyncdisk/yolo-utils/YOLO_Format
 train: images/train
 val: images/val
 test: images/test

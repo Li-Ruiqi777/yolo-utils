@@ -164,5 +164,8 @@ cython_debug/
 /VOC
 /YOLO_Format
 /runs
+/YOLOv8-TensorRT
 
 *.pt
+*.onnx
+*.engine

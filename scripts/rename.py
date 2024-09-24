@@ -4,12 +4,15 @@ def rename_images_in_folder(folder_path):
     # 获取文件夹内的所有文件
     files = os.listdir(folder_path)
 
-    # 过滤出图片文件（按常见图片扩展名）
-    image_extensions = [".jpg", ".jpeg", ".png", ".bmp", ".gif", ".tiff"]
+    # 过滤出需要排序的文件
+    image_extensions = [".jpg", ".jpeg", ".png", ".bmp", ".gif", ".tiff", ".txt", ".xml"]
     images = [f for f in files if os.path.splitext(f)[1].lower() in image_extensions]
 
-    # 对图片进行排序并从00001开始重命名
-    for idx, image in enumerate(sorted(images), start=1):
+    # 命名起始序号
+    start=1
+
+    # 对图片进行排序并从start开始重命名
+    for idx, image in enumerate(sorted(images), start):
         new_name = f"{idx:06d}{os.path.splitext(image)[1].lower()}"
 
         # 原文件路径和新文件路径
@@ -21,5 +24,5 @@ def rename_images_in_folder(folder_path):
         print(f"Renamed: {old_file} -> {new_file}")
 
 if __name__ == "__main__":
-    folder_path = "E:\BaiduSyncdisk\DLPWeld\dataset_angleSteel\yolo-utils\VOC\JPEGImages"
+    folder_path = "E:/BaiduSyncdisk/yolo-utils/VOC/Annotations"
     rename_images_in_folder(folder_path)

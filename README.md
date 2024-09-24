@@ -58,7 +58,9 @@ python ./scripts/makedirs.py
 
 
 
-7.调用脚本`scripts\xml2txt.py`将标签的格式转为YOLO格式
+7.调用脚本`scripts\xml2txt.py`将标签的格式转为YOLO格式。需要注意的是，此脚本中的“classes”列表需要按照标注时候的顺序填写标签名称，如下图所示：
+
+![alt text](<imgs/屏幕截图 2024-09-24 171707.png>)
 
 
 
