@@ -1,0 +1,13 @@
+path: E:\DeepLearning\yolo-utils\YOLO_Format
+train: images/train
+val: images/val
+test: images/test
+
+
+#classes
+names:
+  0: broken
+  1: warp
+  2: scatter
+  3: rust
+  4: wear
