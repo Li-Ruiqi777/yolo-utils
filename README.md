@@ -70,3 +70,11 @@ classes = ['broken', 'warp', 'scatter', 'rust', 'wear']
 10.调用脚本`scripts\train.py`即可开始训练YOLOv8模型
 
 11.调用脚本`scripts\export.py`导出onnx格式的模型
+
+12.将`onnx`格式的模型转成TensorRT支持的`engine`格式
+
+```bat
+trtexec --onnx=${path_to_onnx} --saveEngine=${path_to_engine} --fp16
+```
+
+13.编译`/deploy/detect/`路径下的工程，修改`main.cpp`里的路径，即可进行测试
