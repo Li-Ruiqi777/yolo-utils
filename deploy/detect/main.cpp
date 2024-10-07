@@ -1,8 +1,6 @@
 #include "opencv2/opencv.hpp"
-#include "yolov8.hpp"
+#include "yolov8.h"
 #include <chrono>
-
-namespace fs = ghc::filesystem;
 
 const std::vector<std::string> CLASS_NAMES = {
     "work_piece",
@@ -14,19 +12,14 @@ const std::vector<std::vector<unsigned int>> COLORS = {
 
 int main(int argc, char **argv)
 {
-    // cuda:0
-    cudaSetDevice(0);
-
     const std::string engine_file_path = "E:/DeepLearning/yolo-utils/yolov8n.engine";
-    const fs::path path = "E:/DeepLearning/0_DataSets/WorkPiece_Origin/back/"; //图片所在的文件夹
-
+    const std::string path = "E:/DeepLearning/0_DataSets/WorkPiece_Origin/back/"; // 图片所在的文件夹
     std::vector<std::string> imagePathList;
-    bool isVideo{false};
+    cv::glob(path + "/*.jpg", imagePathList);
 
+    cudaSetDevice(0);
     auto yolov8 = new YOLOv8(engine_file_path);
     yolov8->make_pipe(true);
-
-    cv::glob(path.string() + "/*.jpg", imagePathList);
 
     cv::Mat res, image;
     cv::Size size = cv::Size{800, 800};
