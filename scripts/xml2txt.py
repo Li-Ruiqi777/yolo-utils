@@ -47,9 +47,11 @@ def convert_annotation(xmlpath, xmlname):
                  float(xmlbox.find('ymax').text))
             bb = convert((w, h), b)
             res.append(str(cls_id) + " " + " ".join([str(a) for a in bb]))
-        if len(res) != 0:
-            with open(txtfile, 'w+') as f:
+        with open(txtfile, 'w+') as f:
+            if len(res) != 0:
                 f.write('\n'.join(res))
+            else:
+                f.write('')
 
 
 if __name__ == "__main__":    

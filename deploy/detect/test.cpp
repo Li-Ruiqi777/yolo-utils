@@ -4,6 +4,8 @@ int main()
 {
     DetectService detect_service;
     cv::Mat image = cv::imread("E:/DeepLearning/0_DataSets/WorkPiece_Origin/back/0406.jpg");
+    cv::Mat* img_ptr = &(cv::imread("E:/DeepLearning/0_DataSets/WorkPiece_Origin/back/0406.jpg"));
+    auto img = img_ptr->clone();
     std::vector<Object> bboxes;
     auto dst = detect_service.predict(image, bboxes);
     cv::imshow("dst", dst);

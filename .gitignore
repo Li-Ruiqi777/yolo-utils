@@ -171,3 +171,7 @@ cython_debug/
 *.engine
 
 /.vscode
+
+*.7z
+*.zip
+/weights

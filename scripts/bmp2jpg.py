@@ -2,7 +2,7 @@ import os
 from PIL import Image
 
 # 定义文件夹路径
-folder_path = 'E:\BaiduSyncdisk\DLPWeld\dataset_angleSteel\yolo-utils\VOC\JPEGImages'  # 替换为你要转换的文件夹路径
+folder_path = 'E:/DeepLearning/0_DataSets/WireRope-New/crop'  # 替换为你要转换的文件夹路径
 
 # 创建输出文件夹，存储转换后的图像
 output_folder = os.path.join(folder_path, "./")

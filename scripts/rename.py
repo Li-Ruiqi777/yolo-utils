@@ -1,5 +1,7 @@
 import os
 
+start_idx = 918
+
 def rename_images_in_folder(folder_path):
     # 获取文件夹内的所有文件
     files = os.listdir(folder_path)
@@ -8,11 +10,8 @@ def rename_images_in_folder(folder_path):
     image_extensions = [".jpg", ".jpeg", ".png", ".bmp", ".gif", ".tiff", ".txt", ".xml"]
     images = [f for f in files if os.path.splitext(f)[1].lower() in image_extensions]
 
-    # 命名起始序号
-    start=1
-
-    # 对图片进行排序并从start开始重命名
-    for idx, image in enumerate(sorted(images), start):
+    # 对图片进行排序并从start_idx开始重命名
+    for idx, image in enumerate(sorted(images), start_idx):
         new_name = f"{idx:06d}{os.path.splitext(image)[1].lower()}"
 
         # 原文件路径和新文件路径
@@ -24,5 +23,5 @@ def rename_images_in_folder(folder_path):
         print(f"Renamed: {old_file} -> {new_file}")
 
 if __name__ == "__main__":
-    folder_path = "E:\DeepLearning\yolo-utils\VOC\JPEGImages"
+    folder_path = "E:/DeepLearning/0_DataSets/WireRope-New/MV-CL024-91GM+K90020813"
     rename_images_in_folder(folder_path)
