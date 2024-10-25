@@ -78,3 +78,12 @@ trtexec --onnx=${path_to_onnx} --saveEngine=${path_to_engine} --fp16
 ```
 
 13.编译`/deploy/detect/`路径下的工程，修改`main.cpp`里的路径，即可进行测试
+
+
+# 使用热力图
+
+热力图的生成需要用到`scripts/yolov8-heatmap.py`脚本,直接运行就行了。
+使用前需要安装对应的依赖：
+```
+pip install grad-cam==1.4.8 -i https://pypi.tuna.tsinghua.edu.cn/simple
+```

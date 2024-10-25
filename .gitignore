@@ -165,13 +165,13 @@ cython_debug/
 /YOLO_Format
 /runs
 /YOLOv8-TensorRT
+/heatmap_result
+/.vscode
+/weights
 
 *.pt
 *.onnx
 *.engine
 
-/.vscode
-
 *.7z
 *.zip
-/weights
