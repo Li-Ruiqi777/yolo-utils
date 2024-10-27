@@ -168,6 +168,7 @@ cython_debug/
 /heatmap_result
 /.vscode
 /weights
+/ultralytics
 
 *.pt
 *.onnx

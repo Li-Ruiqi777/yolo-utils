@@ -1,4 +1,4 @@
-path: E:\DeepLearning\yolo-utils\YOLO_Format
+path: /home/jiahan/Desktop/yolo-utils/YOLO_Format
 train: images/train
 val: images/val
 test: images/test
@@ -8,6 +8,6 @@ test: images/test
 names:
   0: broken
   1: warp
-  2: scatter
-  3: rust
-  4: wear
+  # 2: scatter
+  # 3: rust
+  # 4: wear
