@@ -51,7 +51,7 @@ python ./scripts/makedirs.py
 6.标注好后，将`E:/Images/label/VOC/`文件夹内的所有`.xml`文件放到`./VOC/Annotations`下,将所有`.jpg`图片放到`./VOC/JPEGImages`下
 
 
-7.调用脚本`scripts/dataset/xml2txt.py`将标签的格式转为YOLO格式。需要注意的是，此脚本中的“classes”列表需要按照标注时候的顺序填写标签名称:
+7.调用脚本`scripts/dataset/voc2yolo.py`将VOC(xml)格式的标签的格式转为YOLO格式。需要注意的是，此脚本中的“classes”列表需要按照标注时候的顺序填写标签名称:
 
 ```
 classes = ['broken', 'warp', 'scatter', 'rust', 'wear']
