@@ -58,11 +58,12 @@ def convert_coco_to_yolo(coco_json_path, images_dir, output_image_dir, output_la
     print(f"转换完成, YOLO标签已保存到 {output_label_dir}，图像已保存到 {output_image_dir}")
 
 if __name__ == '__main__':
+    root_path = "E:/DeepLearning/0_DataSets/006-rope/005-rope1+2-sliced/"
     # 修改为你的数据集路径
-    coco_root = './COCO_Format/annotations'
-    images_root = './COCO_Format/images'
-    yolo_images_root = './YOLO_Format/yolo/images'
-    yolo_labels_root = './YOLO_Format/yolo/labels'
+    coco_root = os.path.join(root_path, 'COCO_Format/annotations')
+    images_root = os.path.join(root_path, 'COCO_Format/images')
+    yolo_images_root = os.path.join(root_path, 'YOLO_Format/images')
+    yolo_labels_root = os.path.join(root_path, 'YOLO_Format/labels')
 
     # 数据集分为 train, val, test
     datasets = {

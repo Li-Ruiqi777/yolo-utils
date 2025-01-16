@@ -65,9 +65,9 @@ def visualize_yolo_labels(image_folder, label_folder, output_folder=None, class_
 
 if __name__ == "__main__":
 
-    image_folder = "E:/DeepLearning/yolo-utils/YOLO_Format/images/test"
-    label_folder = "E:/DeepLearning/yolo-utils/YOLO_Format/labels/test"
-    output_folder = "./temp" 
+    image_folder = "E:/DeepLearning/0_DataSets/006-rope/003-rope1+2/YOLO_Format/images/test"
+    label_folder = "E:/DeepLearning/0_DataSets/006-rope/003-rope1+2/YOLO_Format/labels/test"
+    output_folder = "E:/DeepLearning/0_DataSets/006-rope/003-rope1+2/YOLO_Format/visualize" 
     class_names = ["broken", "warp", "scatter","rust","wear"]  # 可选: 类别名称
 
     visualize_yolo_labels(image_folder, label_folder, output_folder, class_names)

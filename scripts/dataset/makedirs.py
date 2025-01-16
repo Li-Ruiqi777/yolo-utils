@@ -1,7 +1,7 @@
 import os
 
 # 指定根目录
-root_dir = "./"  # 替换为你实际的根目录路径
+root_dir = "E:/DeepLearning/0_DataSets/006-rope/005-rope1+2-sliced"  # 替换为你实际的根目录路径
 
 # 定义要创建的目录结构
 dirs = [
