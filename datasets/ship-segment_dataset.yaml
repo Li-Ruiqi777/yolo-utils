@@ -1,0 +1,9 @@
+path: /home/jiahan/Desktop/001-mix/YOLO_Format
+train: images/train
+val: images/val
+test: images/test
+
+
+#classes
+names:
+  0: ship
